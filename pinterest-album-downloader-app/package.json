@@ -1,0 +1,25 @@
+{
+  "name": "pinterest-album-downloader-app",
+  "version": "1.0.0",
+  "description": "An application with interface to download pinterest albums",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joseppou/pinterest-album-downloader.git"
+  },
+  "author": "Povloper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joseppou/pinterest-album-downloader/issues"
+  },
+  "homepage": "https://github.com/joseppou/pinterest-album-downloader#readme",
+  "devDependencies": {
+    "electron": "^16.0.5"
+  },
+  "dependencies": {
+    "request": "^2.81.0"
+  }
+}
