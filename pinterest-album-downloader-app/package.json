@@ -4,7 +4,8 @@
   "description": "An application with interface to download pinterest albums",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "builder": "electron-builder"
   },
   "repository": {
     "type": "git",
@@ -17,9 +18,26 @@
   },
   "homepage": "https://github.com/joseppou/pinterest-album-downloader#readme",
   "devDependencies": {
-    "electron": "^16.0.5"
+    "electron": "^16.0.5",
+    "electron-builder": "^22.14.5"
   },
   "dependencies": {
+    "@electron/remote": "^2.0.4",
+    "csv-writer": "^1.6.0",
     "request": "^2.81.0"
+  },
+  "extraResources": [
+    "./node_modules/@electron/remote/**"
+  ],
+  "build": {
+    "appId": "my-adppp",
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": true
+    }
   }
 }
